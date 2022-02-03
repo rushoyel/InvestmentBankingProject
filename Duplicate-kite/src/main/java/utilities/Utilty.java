@@ -10,6 +10,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Utilty {
 	
+	// repeted code
 	public static void takeScreenshot(WebDriver driver, int testID) throws IOException {
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File("test-output"+File.separator+"testScreenshots"+File.separator+"Test_"+testID+"Date and Time"+".jpg");
